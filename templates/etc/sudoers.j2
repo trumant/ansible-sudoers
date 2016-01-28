@@ -13,6 +13,10 @@ Defaults {{ item }}
 {% endif %}
 {% endfor %}
 
+{% for item in sudoers_sudoers.user_defaults %}
+Defaults:{{ item.user }} {{ item.value }}
+{% endfor %}
+
 # Host alias specification
 {% for item in sudoers_sudoers.host_aliases | default([]) %}
 Host_Alias {{ item.name }} = {{ item.members }}
