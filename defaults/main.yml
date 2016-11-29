@@ -14,3 +14,5 @@ sudoers_sudoers:
       entry: "{{ 'ALL=(ALL:ALL) ALL' if (ansible_distribution == 'Ubuntu' and ansible_distribution_version | version_compare('12.04', '>=') or ansible_distribution == 'Debian' and ansible_distribution_version | version_compare('7.0', '>=')) else 'ALL=(ALL) ALL' }}"
 
 sudoers_sudoers_d_files: {}
+
+sudoers_sudo_version: latest
