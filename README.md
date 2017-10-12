@@ -46,7 +46,7 @@ None
 * `sudoers_sudoers_d_files.key.privileges` [default: `[]`]: List of privileges
 * `sudoers_sudoers_d_files.key.privileges.name`: Name of user or group (group should be prefixed with '%')
 * `sudoers_sudoers_d_files.key.privileges.entry`: A privilege entry
-* `sudoers_sudo_version`: The version of sudo that should be installed if it is missing.  Defaults to `latest`.  
+* `sudoers_sudo_state`: The state of the sudo package.   Defaults to `latest`.  
 ## Dependencies
 
 None

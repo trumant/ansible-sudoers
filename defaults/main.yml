@@ -15,4 +15,4 @@ sudoers_sudoers:
 
 sudoers_sudoers_d_files: {}
 
-sudoers_sudo_version: latest
+sudoers_sudo_state: latest

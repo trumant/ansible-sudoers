@@ -3,7 +3,7 @@
 - name: install
   apt:
     name: sudo
-    state: "{{ sudoers_sudo_version }}"
+    state: "{{ sudoers_sudo_state }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
   tags: [configuration, sudoers, sudoers-install]
